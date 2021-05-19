@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>X / O &mdash; game</title>
+</head>
+
+<body>
+    <section class="xoGame">
+        <h3 class="xoGame__heading">The X &mdash; O game</h3>
+
+        <div class="xoGame__player">
+            <div class="xoGame__player-0 active">
+                <div class="xoGame__player--name" id="name-0">Player 1 (X)</div>
+                <div class="xoGame__player--score" id="score-0">5</div>
+            </div>
+
+            <div class="xoGame__player-1">
+                <div class="xoGame__player--name" id="name-1">Player 2 (O)</div>
+                <div class="xoGame__player--score" id="score-1">8</div>
+            </div>
+        </div>
+
+
+        <div class="xoGame__board">
+            <div class="xoGame__board--fields">
+                <div class="xoGame__board--field bt-trans bl-trans">
+                    <span class="xoGame__board--value">X</span>
+                </div>
+                <div class="xoGame__board--field bl-trans">
+                    <span class="xoGame__board--value">X</span>
+                </div>
+                <div class="xoGame__board--field bl-trans bb-trans">
+                    <span class="xoGame__board--value">O</span>
+                </div>
+            </div>
+            <div class="xoGame__board--fields">
+                <div class="xoGame__board--field bt-trans">
+                    <span class="xoGame__board--value">X</span>
+                </div>
+                <div class="xoGame__board--field">
+                    <span class="xoGame__board--value">O</span>
+                </div>
+                <div class="xoGame__board--field bb-trans">
+                    <span class="xoGame__board--value">O</span>
+                </div>
+            </div>
+            <div class="xoGame__board--fields">
+                <div class="xoGame__board--field bt-trans br-trans">
+                    <span class="xoGame__board--value">O</span>
+                </div>
+                <div class="xoGame__board--field br-trans">
+                    <span class="xoGame__board--value">X</span>
+                </div>
+                <div class="xoGame__board--field br-trans bb-trans">
+                    <span class="xoGame__board--value">X</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="xoGame__btn">Refresh</button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

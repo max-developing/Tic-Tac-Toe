@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-image: linear-gradient(to right,
+    #333333,
+    #dd1818);
+
+    width: 100vw;
+    height: 100vh;
+}

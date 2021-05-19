@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #333333, #dd1818);
+  width: 100vw;
+  height: 100vh; }
+
+.xoGame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .xoGame__heading {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center; }
+  .xoGame__player {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem; }
+    .xoGame__player--score {
+      display: flex;
+      justify-content: center; }
+  .xoGame__board {
+    width: 45rem;
+    height: 45rem;
+    display: flex;
+    margin: auto; }
+    .xoGame__board--fields {
+      width: 15rem;
+      height: 15rem; }
+    .xoGame__board--field {
+      width: 100%;
+      height: 100%;
+      border: 3px solid black; }
+    .xoGame__board--value {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+      font-weight: 300;
+      font-size: 200%;
+      cursor: pointer; }
+  .xoGame__btn {
+    width: 10%;
+    height: 5%;
+    font-size: inherit;
+    border: 3px solid black;
+    background-color: lightcoral;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    margin: 1rem auto; }
+
+.bt-trans {
+  border-top: 3px solid transparent; }
+
+.bb-trans {
+  border-bottom: 3px solid transparent; }
+
+.bl-trans {
+  border-left: 3px solid transparent; }
+
+.br-trans {
+  border-right: 3px solid transparent; }
+
+.hidden {
+  opacity: 0; }
